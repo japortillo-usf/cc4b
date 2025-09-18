@@ -24,4 +24,13 @@ for (let product of products) {
 console.log(JSON.parse(JSON.stringify(products)));
 
 
-Hi 
+
+
+
+function extraDiscountFor(customerType) {
+  if (customerType === "student") return 0.09;  // +9%
+  else if (customerType === "senior") return 0.012; // +12%
+  return 0; // regular/other
+}; 
+
+
